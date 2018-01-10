@@ -4,13 +4,14 @@ body{
 	font-family: 'Helvetica';
 }
 header{
-	background-color: darkgray;
+	background-image: url(images/wood.jpg);
 	text-align: center;
+	color: white;
 	padding: 100px;
 }
 
 section{
-	background-color: darkgray;
+	background-image: url(images/wood.jpg);
 	text-align: center;
 }
 
@@ -20,66 +21,63 @@ section{
 	padding: 100px;
 	text-align: center;
 	background-color: gray;
-}
-#about h1, #contact h1{
 	color: white;
+	font-size: 15px;
+}
+#portfolio{
+	color: black;
+}
+#about h1, #contact h1, #portfolio h1{
+	color: #ff9999;
 }
 
-#portfolio{
-	background-color: darkgray;
-	display: inline-block;
-}
 
 #projects{
-	background-color:#ff9999;
+	background-color:black;
 	color: white;
 	padding: 3px;
 }
 
-.links {
-	color: black;
+.panel-body{
+	height: 300px;
+	padding: 10px;
 }
 
-#resume{
-	background-color: #ff9999;
+.links {
+	color: #ff9999;
+	margin: 2px;
+}
+.links:hover {
+	color: white;
+}
+.git, #resume, #submit{
+	background-color: black;
 	color: white;
 	border-radius: 10px;
-	border-width: thick;
-	border-color: white;
 	padding: 10px;
 	text-decoration: none;
 }
 
-#resume:hover{
-	background-color: black;
-
-}
-
-#submit{
+#resume:hover, .git:hover, #submit:hover{
 	background-color: #ff9999;
-	color: white;
-	border-radius: 10px;
-	padding: 5px;
-	width: 100px;
-	border: white;
+	color: black;
+	text-decoration: none;
 	
 }
 
-#submit:hover{
-	background-color: black;
-
-}
 
 nav.page-navigation{
 	list-style-type: none;
-    background-color: #ff9999;
+    background-color: black;
 	height: 60px;
+	box-shadow: 0px 5px 5px;
+
 }
 
 
 nav.page-navigation li {
     color: white;
-	background-color: #ff9999;
+	background-color: black;
 }
 
 nav.page-navigation li a {
@@ -91,8 +89,8 @@ nav.page-navigation li a {
 
 
 nav.page-navigation li a:hover {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 	height: 60px;
 }
 
@@ -112,5 +110,4 @@ footer{
 	position: fixed;
 	bottom: 5px;
 	right: 5px;
-	color: #ff9999;
 }
