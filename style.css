@@ -32,15 +32,16 @@ section{
 }
 
 
-.projects{
+#projects{
 	background-color:black;
 	color: white;
-	padding: 3px;
 }
 
 .panel-body{
 	height: 300px;
 	padding: 10px;
+	color:white;
+	background-color: black;	
 }
 
 .links {
