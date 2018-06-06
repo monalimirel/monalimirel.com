@@ -5,9 +5,14 @@ body{
 }
 header{
 	background-image: url(images/wood.jpg);
-	text-align: center;
+	text-align:center;
 	color: white;
 	padding: 100px;
+	height: 800px;
+}
+#header-content{
+	position: relative;
+	top: 150px;
 }
 
 section{
@@ -37,8 +42,12 @@ section{
 	color: white;
 }
 
+.panel-body:hover{
+	background-color:white;
+	color: black;
+}
+
 .panel-body{
-	height: 300px;
 	padding: 10px;
 	color:white;
 	background-color: black;	

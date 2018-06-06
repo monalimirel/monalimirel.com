@@ -14,6 +14,8 @@
 	<!-- Custom Fonts -->
 	<script src="https://use.fontawesome.com/bff4988543.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
 
 
 </head>
@@ -34,7 +36,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="menu nav navbar-nav navbar-right">
 				<li class="page-scroll"><a href="#about">About</a></li>
-				<li class="page-scroll"><a href="#portfolio">Portfolio</a></li>
+				<li class="page-scroll"><a href="#portfolio">Projects</a></li>
 				<li class="page-scroll"><a href="#contact">Contact</a></li>
 			</ul>
 		</div>
@@ -43,11 +45,21 @@
 	
 	<header>
 	<div class="container">
-		<div class="row">
-            <div class="col-sm-12">
-				<img class="img-responsive center-block" src="images/monali.png" alt="Monali" height="500" width="500">
-				<h1>Monali Mirel Chuatico</h1>
-				<h4>Computer Science Student at SFSU</h4>
+		<div class="row" style="height: 500px;">
+            <div class="col-sm-12" id="header-content" >
+				<img class="img-responsive center-block" src="images/monali.png" alt="Monali" height="200" width="200">
+				<h1 class="type"></h1>
+				<script type="text/javascript" src="js/typed.js"></script>
+				<script type="text/javascript">
+  					var typed = new Typed(".type", {
+  					strings: ["Hello, world!","I'm Monali Mirel Chuatico."],
+  					typeSpeed: 80,
+					backSpeed: 80,
+					showCursor: false,
+					loop: true,
+					});
+				</script>
+				<h4>Computer Scientist | Developer | Designer</h4>
 					<h2>
 					<a href="https://www.facebook.com/monali07"><i class="fa fa-facebook-square links"></i></a>
 					<a href="https://www.instagram.com/monalimirel/"><i class="fa fa-instagram links"></i></a>
@@ -68,7 +80,7 @@
 					<br/>
 					Hello, world! I'm <span style="font-weight: bold">Monali Mirel Chuatico</span>, a Computer Science student at San Francisco State University, currently looking for internships and job opportunities to gain experience and expand my skillset. My passion for creativity and problem-solving lead me to pursue a degree in Computer Science. I enjoy bridging the gap between design and engineering, combining my technical knowledge with my keen eye for design to create beautiful, meaningful products that are efficient, engaging, and user-friendly.
 					<br/><br/>
-					<span style="font-style: italic">When I'm not in front of a computer screen,</span> I like to dance, sing karaoke, see my favorite music artists, and explore different places/restaurants.</p>
+					<span style="font-style: italic">When I'm not in front of a computer screen,</span> I like to dance, sing karaoke, learn my favorite songs on the guitar, attend music festivals, and explore different places/restaurants.</p>
 					<br/>
 					<p><span style="font-weight: bold">Education:</span><br/>
 					BS in Computer Science, SFSU <br/>
@@ -93,7 +105,7 @@
 		 <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center">
-					<h1>Portfolio <i class="fa fa-folder-o"></i></h1>
+					<h1>Projects <i class="fa fa-folder-o"></i></h1>
 				</div>
 			 </div>
 			 <br/>
@@ -101,10 +113,10 @@
 				<div class="col-sm-6">
 					<div class="panel panel-default">
 						<div class="panel-heading" id="projects">
-							<h4>MonaliMirel.com (HTML5/CSS3)</h4>
+							<h4>MonaliMirel.com</h4>
 						</div>
 						<div class="panel-body">
-							<a href="http://monalimirel.com/"><img class="img-responsive" src="images/monalimirel.png" alt="MonaliMirel.com screenshot" style="max-width: 100px; max-height: 100px; display: block; margin: auto;"></a>								<p>My portfolio website that I designed and built from the ground up using HTML5, CSS3, Javascript, jQuery, and PHP. It is built to serve as an online resume that contains links to projects I’ve worked on and provide a list my skills and job experiences. It is built with a responsive layout that is also mobile-friendly.</p>
+							<a href="http://monalimirel.com/"><img class="img-responsive" src="images/monalimirel.png" alt="MonaliMirel.com screenshot" style="max-width: 100%;  display: block; margin: auto;"></a>								<p>My portfolio website that I designed and built from the ground up using HTML5, CSS3, Javascript, jQuery, Bootstrap, and PHP.</p>
 							<br/>
 							<a href="https://github.com/monalimirel/monalimirel.com" class="git">GitHub Repository</a>
 						</div>
@@ -113,10 +125,10 @@
 				<div class="col-sm-6">
 					<div class="panel panel-default">
 						<div class="panel-heading" id="projects">
-							<h4>MissionConst.com (HTML5/CSS3)</h4>
+							<h4>MissionConst.com</h4>
 						</div>
 						<div class="panel-body">
-							<a href="http://missionconst.com/"><img class="img-responsive" src="images/missionconst.png" alt="MissionConst.com screenshot" style="max-width: 100px; max-height: 100px; display: block; margin: auto;"></a>								<p>A company website consisting of four web pages that I designed and built from the ground up using HTML5, CSS3, Javascript, jQuery, and some Bootstrap. The website is responsive and is viewable in any devices. I regularly maintain the website and update it according to my client’s needs and preferences.
+							<a href="http://missionconst.com/"><img class="img-responsive" src="images/missionconst.png" alt="MissionConst.com screenshot" style="max-width: 100%; display: block; margin: auto;"></a>								<p>A company website that I designed and built from the ground up using HTML5, CSS3, Javascript, jQuery, and Bootstrap.
 								</p>
 								<br/>
 							<a href="https://github.com/monalimirel/missionconst.com" class="git">GitHub Repository</a>
@@ -126,10 +138,34 @@
 				<div class="col-sm-6">
 					<div class="panel panel-default">
 						<div class="panel-heading" id="projects">
+							<h4>Tank Game</h4>
+						</div>
+						<div class="panel-body">
+							<a href="https://github.com/monalimirel/Tank-Game"><img class="img-responsive" src="images/tank.png" alt="Tank Game" style="max-width: 100%; max-height: 100%; display: block; margin: auto;"></a>								<p>A 2D two-player game I developed in Java.</p>
+							<br/>
+							<a href="https://github.com/monalimirel/Tank-Game" class="git">GitHub Repository</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="panel panel-default">
+						<div class="panel-heading" id="projects">
+							<h4>Super Rainbow Reef</h4>
+						</div>
+						<div class="panel-body">
+							<a href="https://github.com/monalimirel/Super-Rainbow-Reef"><img class="img-responsive" src="images/rainbow.png" alt="Tank Game" style="max-width: 100%; max-height: 100%; display: block; margin: auto;"></a>								<p>A 2D one-player game I developed in Java.</p>
+							<br/>
+							<a href="https://github.com/monalimirel/Super-Rainbow-Reef" class="git">GitHub Repository</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="panel panel-default">
+						<div class="panel-heading" id="projects">
 							<h4>Rat-In-A-Maze (JAVA)</h4>
 						</div>
 						<div class="panel-body">
-							<a id="rat" href="https://github.com/monalimirel/Rat-In-A-Maze"><img class="img-responsive" src="images/rat.gif" alt="Rat-In-A-Maze" style="max-width: 100px; max-height: 100px; display: block; margin: auto;"></a>								<p>The program will prompt the user whether he wishes to open a maze file or create a new maze then the progam will solve the maze.</p>
+							<a id="rat" href="https://github.com/monalimirel/Rat-In-A-Maze"><img class="img-responsive" src="images/rat.gif" alt="Rat-In-A-Maze" style="max-width: 100%; max-height: 100%; display: block; margin: auto;"></a>								<p>The program will prompt the user whether he wishes to open a maze file or create a new maze then the progam will solve the maze.</p>
 							<br/>
 							<a href="https://github.com/monalimirel/Rat-In-A-Maze" class="git">GitHub Repository</a>
 						</div>
@@ -139,7 +175,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading" id="projects"><h4>Spelling Checker (JAVA)</h4></div>
 						<div class="panel-body">
-							<a id="spell" href="https://github.com/monalimirel/Spelling-Checker"><img class="img-responsive" src="images/spell.png" alt="Spelling Checker" style="max-width: 100px; max-height: 100px; display: block; margin: auto;"></a>
+							<a id="spell" href="https://github.com/monalimirel/Spelling-Checker"><img class="img-responsive" src="images/spell.png" alt="Spelling Checker" style="max-width: 80%; max-height: 80%; display: block; margin: auto;"></a>
 							<p>The program accepts words from a dictionary and a document and then outputs the words in the document that are not in the dictionary.</p>
 							<br/>
 							<a href="https://github.com/monalimirel/Spelling-Checker" class="git">GitHub Repository</a>
